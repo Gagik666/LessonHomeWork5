@@ -31,41 +31,45 @@
 
     <ImageButton
         android:id="@+id/btnC"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="90dp"
         android:onClick="btnC"
         android:src="@drawable/btn_c"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnX"
         app:layout_constraintTop_toBottomOf="@id/guideline1"/>
 
     <ImageButton
         android:id="@+id/btnX"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="90dp"
         android:onClick="btnX"
         android:src="@drawable/btn_x"
-        android:layout_marginStart="3dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintEnd_toStartOf="@id/btnPe"
         app:layout_constraintStart_toEndOf="@id/btnC"
         app:layout_constraintTop_toBottomOf="@id/guideline1"/>
 
     <ImageButton
         android:id="@id/btnPe"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="90dp"
         android:src="@drawable/btn_pe"
         android:onClick="btnPe"
         android:layout_marginStart="2dp"
         app:layout_constraintStart_toEndOf="@id/btnX"
+        app:layout_constraintEnd_toStartOf="@id/btnDiv"
         app:layout_constraintTop_toBottomOf="@id/guideline1"/>
 
     <ImageButton
         android:id="@+id/btnDiv"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="90dp"
         android:onClick="btnDiv"
         android:src="@drawable/btn_div"
-        android:layout_marginStart="3dp"
+        android:layout_marginStart="2dp"
         app:layout_constraintStart_toEndOf="@+id/btnPe"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline1"/>
 
     <ImageButton
