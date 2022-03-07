@@ -74,45 +74,49 @@
 
     <ImageButton
         android:id="@+id/btnNum7"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="90dp"
         android:onClick="btn7"
         android:src="@drawable/btn_7"
         android:layout_marginTop="3dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnNum8"
         app:layout_constraintTop_toBottomOf="@id/btnC"/>
 
     <ImageButton
         android:id="@+id/btnNum8"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="90dp"
         android:src="@drawable/btn_8"
         android:onClick="btn8"
         android:layout_marginTop="3dp"
-        android:layout_marginStart="3dp"
+        android:layout_marginStart="2dp"
         app:layout_constraintStart_toEndOf="@id/btnNum7"
+        app:layout_constraintEnd_toStartOf="@id/btnNum9"
         app:layout_constraintTop_toBottomOf="@id/btnX"/>
 
     <ImageButton
         android:id="@+id/btnNum9"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="90dp"
         android:src="@drawable/btn_9"
         android:onClick="btn9"
-        android:layout_marginStart="3dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="3dp"
         app:layout_constraintStart_toEndOf="@id/btnNum8"
+        app:layout_constraintEnd_toStartOf="@id/btnMu"
         app:layout_constraintTop_toBottomOf="@id/btnPe"/>
 
     <ImageButton
         android:id="@+id/btnMu"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="90dp"
         android:src="@drawable/btn_mu"
         android:onClick="btnMu"
         android:layout_marginTop="3dp"
-        android:layout_marginStart="3dp"
+        android:layout_marginStart="2dp"
         app:layout_constraintStart_toEndOf="@id/btnNum9"
+        end app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnDiv"/>
 
     <ImageButton
